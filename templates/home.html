@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}SmartSpend | Personal Finance Analytics{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">Personal finance analytics</p>
+        <h1>Understand your money before it becomes a mystery.</h1>
+        <p class="hero-copy">
+            SmartSpend will help you track expenses, analyse spending behaviour,
+            and later predict patterns with machine learning.
+        </p>
+        <div class="hero-actions">
+            <a class="button primary" href="#">Add Expense</a>
+            <a class="button secondary" href="#">View Dashboard</a>
+        </div>
+    </div>
+
+    <aside class="summary-panel" aria-label="Spending summary preview">
+        <div class="panel-header">
+            <span>This month</span>
+            <strong>Preview</strong>
+        </div>
+        <div class="metric">
+            <span>Total spend</span>
+            <strong>£1,248.90</strong>
+        </div>
+        <div class="metric-row">
+            <div>
+                <span>Top category</span>
+                <strong>Food</strong>
+            </div>
+            <div>
+                <span>Forecast</span>
+                <strong>+8%</strong>
+            </div>
+        </div>
+        <div class="bar-chart" aria-hidden="true">
+            <span style="height: 48%"></span>
+            <span style="height: 72%"></span>
+            <span style="height: 38%"></span>
+            <span style="height: 84%"></span>
+            <span style="height: 58%"></span>
+            <span style="height: 66%"></span>
+        </div>
+    </aside>
+</section>
+{% endblock %}
