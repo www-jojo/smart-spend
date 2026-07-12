@@ -1,49 +1,231 @@
 {% extends "base.html" %}
 
-{% block title %}SmartSpend | Personal Finance Analytics{% endblock %}
+{% block title %}SmartSpend | Expense Intelligence{% endblock %}
 
 {% block content %}
 <section class="hero">
-    <div class="hero-content">
-        <p class="eyebrow">Personal finance analytics</p>
-        <h1>Understand your money before it becomes a mystery.</h1>
+    <div class="hero-copy-wrap">
+        <p class="section-kicker">SmartSpend | Personal Finance Analytics</p>
+        <h1>Track spending like data, not guesswork.</h1>
         <p class="hero-copy">
-            SmartSpend will help you track expenses, analyse spending behaviour,
-            and later predict patterns with machine learning.
+            SmartSpend helps you log expenses, analyse spending behaviour, and
+            build toward machine-learning-powered financial insights over time.
         </p>
+
         <div class="hero-actions">
-            <a class="button primary" href="#">Add Expense</a>
-            <a class="button secondary" href="#">View Dashboard</a>
+            <a class="button primary" href="#">Sign up</a>
+            <a class="button secondary" href="#">Login</a>
         </div>
     </div>
 
-    <aside class="summary-panel" aria-label="Spending summary preview">
-        <div class="panel-header">
-            <span>This month</span>
-            <strong>Preview</strong>
+    <aside class="hero-panel" aria-label="SmartSpend preview panel">
+        <div class="panel-top">
+            <span>SmartSpend preview</span>
+            <span>June overview</span>
         </div>
-        <div class="metric">
+
+        <div class="preview-balance">
             <span>Total spend</span>
             <strong>£1,248.90</strong>
+            <p>+8% from last month</p>
         </div>
-        <div class="metric-row">
-            <div>
+
+        <div class="hero-metrics">
+            <div class="metric-card">
                 <span>Top category</span>
                 <strong>Food</strong>
             </div>
-            <div>
-                <span>Forecast</span>
-                <strong>+8%</strong>
+            <div class="metric-card">
+                <span>Transactions</span>
+                <strong>34</strong>
+            </div>
+            <div class="metric-card">
+                <span>Budget used</span>
+                <strong>78%</strong>
             </div>
         </div>
-        <div class="bar-chart" aria-hidden="true">
-            <span style="height: 48%"></span>
-            <span style="height: 72%"></span>
-            <span style="height: 38%"></span>
-            <span style="height: 84%"></span>
-            <span style="height: 58%"></span>
-            <span style="height: 66%"></span>
+
+        <div class="mini-bars" aria-hidden="true">
+            <span style="height: 42%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 34%"></span>
+            <span style="height: 81%"></span>
+            <span style="height: 55%"></span>
+            <span style="height: 73%"></span>
         </div>
-    </aside>
+    </aside>    
+</section>
+
+<section class="homepage-section">
+    <div class="section-meta">
+        <p class="section-number">01</p>
+        <p class="section-label">Core purpose</p>
+    </div>
+
+    <div class="section-body">
+        <div class="section-heading">
+            <h2>Why SmartSpend</h2>
+            <p>
+                Not just a list of transactions — a foundation for spending analysis,
+                habit tracking, and eventually smarter predictions.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <p class="card-tag">Tracking</p>
+                <h3>Track every transaction</h3>
+                <p>
+                    Log expenses with amount, category, date, and description in one clean workflow.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <p class="card-tag">Analytics</p>
+                <h3>See patterns over time</h3>
+                <p>
+                    Break down monthly spend, category habits, and the small patterns that add up.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <p class="card-tag">ML direction</p>
+                <h3>Build toward prediction</h3>
+                <p>
+                    Use real spending data as the base for future machine-learning-powered insights.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="homepage-section">
+    <div class="section-meta">
+        <p class="section-number">02</p>
+        <p class="section-label">Analytics layer</p>
+    </div>
+
+    <div class="section-body">
+        <div class="section-heading">
+            <h2>What it analyses</h2>
+            <p>
+                SmartSpend is designed to surface trends, not just store expenses.
+            </p>
+        </div>
+
+        <div class="analysis-grid">
+            <article class="analysis-card">
+                <p class="card-tag">Totals</p>
+                <h3>Monthly totals</h3>
+                <p>See how much you actually spent each month at a glance.</p>
+            </article>
+
+            <article class="analysis-card">
+                <p class="card-tag">Breakdowns</p>
+                <h3>Category insights</h3>
+                <p>Spot which categories are taking the biggest share of your money.</p>
+            </article>
+
+            <article class="analysis-card">
+                <p class="card-tag">Habits</p>
+                <h3>Recurring patterns</h3>
+                <p>Find the purchases and routines that quietly shape your budget.</p>
+            </article>
+
+            <article class="analysis-card">
+                <p class="card-tag">Trends</p>
+                <h3>Spending shifts</h3>
+                <p>Track whether your spending behaviour is rising, stabilising, or drifting.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="homepage-section">
+    <div class="section-meta">
+        <p class="section-number">03</p>
+        <p class="section-label">Build roadmap</p>
+    </div>
+
+    <div class="section-body">
+        <div class="section-heading">
+            <h2>Roadmap</h2>
+            <p>
+                A finance tracker now, an analytics and ML project over time.
+            </p>
+        </div>
+
+        <div class="roadmap-list">
+            <div class="roadmap-item">
+                <span>01</span>
+                <div>
+                    <h3>Expense logging</h3>
+                    <p>Build the core add / edit / view expense workflow.</p>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <span>02</span>
+                <div>
+                    <h3>Dashboard analytics</h3>
+                    <p>Show totals, category splits, and monthly summaries.</p>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <span>03</span>
+                <div>
+                    <h3>Budget alerts</h3>
+                    <p>Add spending limits and simple warnings when habits drift.</p>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <span>04</span>
+                <div>
+                    <h3>Prediction experiments</h3>
+                    <p>Use collected data for forecasting and ML-based insight testing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="homepage-section">
+    <div class="section-meta">
+        <p class="section-number">04</p>
+        <p class="section-label">Tech stack</p>
+    </div>
+
+    <div class="section-body">
+        <div class="section-heading">
+            <h2>Built with a data-first stack</h2>
+            <p>
+                SmartSpend is being built as both a useful product and a technical portfolio project.
+            </p>
+        </div>
+
+        <div class="stack-grid">
+            <article class="stack-card">
+                <h3>Python + Flask</h3>
+                <p>Backend routes, templates, form handling, and application logic.</p>
+            </article>
+
+            <article class="stack-card">
+                <h3>SQLite</h3>
+                <p>Structured storage for expenses, categories, dates, and future analytics.</p>
+            </article>
+
+            <article class="stack-card">
+                <h3>HTML / CSS / JavaScript</h3>
+                <p>Frontend structure, interactions, and polished dashboard UI.</p>
+            </article>
+
+            <article class="stack-card">
+                <h3>Pandas / scikit-learn</h3>
+                <p>Future experimentation with spending analysis, trends, and prediction models.</p>
+            </article>
+        </div>
+    </div>
 </section>
 {% endblock %}

@@ -1,43 +1,77 @@
-# SmartSpend
+# 💸 SmartSpend
 
-SmartSpend is a personal finance analytics platform built with Flask, SQLite,
-and vanilla web technologies.
+SmartSpend is a personal finance analytics platform built with **Flask**, **SQLite**, and vanilla web technologies. It helps users track expenses, monitor spending, and gain insights into their financial habits.
 
-The project starts as a clean Flask application, then grows feature by feature
-into a portfolio-ready system for expense tracking, analytics, and future
-machine learning experiments.
 
-## Current Milestone
+The project starts as a clean Flask application, then grows feature by feature into a cutting-edge web application for expense tracking, analytics, and future machine learning experiments.
 
-- Flask application entry point
-- Reusable base template
-- Home page
-- Static CSS and JavaScript folders
-- Project folders for future backend, data, and testing work
+---
 
-## Project Structure
+## ✨ Current Features
 
-```text
-smart-spend/
+- Modern responsive dashboard
+- Expense management page
+- Add Expense form
+- Dynamic expense tracking with Flask
+- Categorised expenses
+- Clean dark UI with green accent theme
+
+---
+
+## 🚧 Features in Progress
+
+- Analytics dashboard
+- Edit and delete expenses
+- Search and filtering
+- SQLite database integration
+- User authentication
+- Spending charts and visualisations
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Flask
+- HTML5
+- CSS3
+- Jinja2
+- Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+SmartSpend/
+│
 ├── app.py
-├── requirements.txt
-├── README.md
+├── database.py
+├── schema.sql
 ├── templates/
-│   ├── base.html
-│   └── home.html
 ├── static/
 │   ├── css/
-│   │   └── style.css
 │   ├── js/
-│   │   └── script.js
 │   └── images/
-├── models/
-├── routes/
-├── services/
-├── utils/
-├── tests/
-└── instance/
+└── README.md
 ```
+
+---
+
+## 📸 Screenshots
+
+Coming soon.
+
+---
+
+## 🎯 Future Goals
+
+- Store expenses using SQLite
+- Build interactive analytics
+- Add secure user authentication
+- Deploy the application online
+
+---
 
 ## Run Locally
 
