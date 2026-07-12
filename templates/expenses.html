@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}SmartSpend | Expenses{% endblock %}
+
+{% block content %}
+<section class="expenses-hero">
+    <div class="expenses-top">
+        <div class="hero-line">
+        <h1 class="head">Expenses</h1> 
+        <a class="add expense button" href="{{ url_for('add_expense') }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            Add Expense
+        </a>
+        </div>
+        <p class="expenses-hero-copy">
+            Track, review and manage your spending in one place.
+        </p>
+        <div class="expenses-analytics">
+            <div class="analytics-card">
+                <p>This month</p>
+                <h3>£210.54</h3>
+                <p><span class="alt-text">↓ 8.3%</span> vs last month</p>
+            </div>
+            <div class="analytics-card">
+                <p>This week</p>
+                <h3>£48.75</h3>
+                <p><span class="alt-text">↓ 5.1%</span> vs last week</p>
+            </div>
+            <div class="analytics-card">
+                <p>Average Daily</p>
+                <h3>£6.96</h3>
+                <p><span class="alt-text">↓ 10.4%</span> vs last month</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="expenses-section">
+    <div class="filter-bar">
+        <select type="text" id="category-button">
+            <option value="" disabled selected hidden>Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Subscription">Subscription</option>
+            <option value="Entertainment">Entertainment</option>
+        </select>
+        <input class="date-button" type="date">
+        <input class="search-button" type="text" placeholder="Search expenses...">
+    </div>
+    <div class="expense-table">
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: left;">Expense</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if expenses%}
+                    {% for expense in expenses %}
+                <tr>
+                    <td class="column-1">{{ expense.title }}</td>
+                    <td><span class="category-badge {{ expense.category|lower }}">{{ expense.category }}</span></td>
+                    <td><span class="expense-amount">£{{ expense.amount }}</span></td>
+                    <td>{{ expense.date }}</td>
+                    <td>✎ 🗑️</td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                    <td colspan="5" class="empty-state">No expenses added yet.</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
