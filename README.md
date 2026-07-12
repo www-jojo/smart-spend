@@ -60,7 +60,17 @@ SmartSpend/
 
 ## 📸 Screenshots
 
-Coming soon.
+## Home
+
+![Home](screenshots/home.png)
+
+## Expenses
+
+![Expenses](screenshots/expenses.png)
+
+## Add Expense
+
+![Add Expense](screenshots/add-expense.png)
 
 ---
 
